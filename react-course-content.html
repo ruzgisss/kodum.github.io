@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React.js Eğitimi - İçerik | KodEğitim</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">KodEğitim</div>
+        <div class="nav-links">
+            <a href="index.html">Ana Sayfa</a>
+            <a href="#courses">Eğitimler</a>
+            <a href="#roadmap">Öğrenim Yolu</a>
+            <a href="#contact">İletişim</a>
+        </div>
+    </nav>
+
+    <div class="lesson-container">
+        <div class="sidebar">
+            <div class="module-list">
+                <h3>React.js Temelleri</h3>
+                <ul>
+                    <li><a href="#react-intro" class="active">React'e Giriş</a></li>
+                    <li><a href="#jsx-basics">JSX Temelleri</a></li>
+                    <li><a href="#components">Component Yapısı</a></li>
+                    <li><a href="#props-state">Props ve State</a></li>
+                </ul>
+
+                <h3>Hooks ve Modern React</h3>
+                <ul>
+                    <li><a href="#hooks-intro">Hooks'a Giriş</a></li>
+                    <li><a href="#useState">useState Hook</a></li>
+                    <li><a href="#useEffect">useEffect Hook</a></li>
+                    <li><a href="#custom-hooks">Custom Hooks</a></li>
+                </ul>
+
+                <h3>State Yönetimi</h3>
+                <ul>
+                    <li><a href="#redux-intro">Redux'a Giriş</a></li>
+                    <li><a href="#redux-toolkit">Redux Toolkit</a></li>
+                    <li><a href="#async-actions">Async İşlemler</a></li>
+                    <li><a href="#redux-best">Best Practices</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="lesson-content">
+            <section id="react-intro" class="lesson">
+                <h1>React.js'e Giriş</h1>
+                <div class="video-container">
+                    <video controls>
+                        <source src="videos/react-intro.mp4" type="video/mp4">
+                        Tarayıcınız video elementini desteklemiyor.
+                    </video>
+                </div>
+                <div class="lesson-text">
+                    <h2>React.js Nedir?</h2>
+                    <p>React.js, Facebook tarafından geliştirilen aç��k kaynaklı bir JavaScript kütüphanesidir. Kullanıcı arayüzleri oluşturmak için kullanılır.</p>
+                    
+                    <h2>İlk React Uygulaması</h2>
+                    <pre><code>
+import React from 'react';
+
+function App() {
+    return (
+        &lt;div&gt;
+            &lt;h1&gt;Merhaba React!&lt;/h1&gt;
+        &lt;/div&gt;
+    );
+}
+
+export default App;
+                    </code></pre>
+
+                    <div class="practice-exercises">
+                        <h3>Alıştırmalar</h3>
+                        <ol>
+                            <li>Create React App ile yeni bir proje oluşturun</li>
+                            <li>İlk component'inizi yazın</li>
+                            <li>Projenizi tarayıcıda görüntüleyin</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="lesson-navigation">
+        <button class="prev-lesson" disabled>Önceki Ders</button>
+        <button class="next-lesson">Sonraki Ders</button>
+    </div>
+
+    <script src="lesson-navigation.js"></script>
+</body>
+</html> 

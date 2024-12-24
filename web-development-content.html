@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Geliştirme Eğitimi - İçerik | KodEğitim</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">KodEğitim</a>
+        <div class="nav-links">
+            <a href="index.html">Ana Sayfa</a>
+            <a href="#courses">Eğitimler</a>
+            <a href="#roadmap">Öğrenim Yolu</a>
+            <a href="#contact">İletişim</a>
+        </div>
+    </nav>
+
+    <div class="lesson-container">
+        <div class="sidebar">
+            <div class="module-list">
+                <h3>HTML5 Temelleri</h3>
+                <ul>
+                    <li><a href="#html-intro" class="active">HTML'e Giriş</a></li>
+                    <li><a href="#html-structure">Sayfa Yapısı</a></li>
+                    <li><a href="#html-elements">Temel Etiketler</a></li>
+                    <li><a href="#html-forms">Form Elemanları</a></li>
+                </ul>
+
+                <h3>CSS3 ile Tasarım</h3>
+                <ul>
+                    <li><a href="#css-intro">CSS'e Giriş</a></li>
+                    <li><a href="#css-selectors">Seçiciler</a></li>
+                    <li><a href="#css-box-model">Box Model</a></li>
+                    <li><a href="#css-flexbox">Flexbox</a></li>
+                </ul>
+
+                <h3>JavaScript Temelleri</h3>
+                <ul>
+                    <li><a href="#js-intro">JavaScript'e Giriş</a></li>
+                    <li><a href="#js-basics">Temel Kavramlar</a></li>
+                    <li><a href="#js-dom">DOM Manipülasyonu</a></li>
+                    <li><a href="#js-events">Event Yönetimi</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="lesson-content">
+            <section id="html-intro" class="lesson">
+                <h1>HTML'e Giriş</h1>
+                <div class="video-container">
+                    <iframe 
+                        width="100%" 
+                        height="515" 
+                        src="https://www.youtube.com/embed/nLCveeY8CAE" 
+                        title="HTML Dersi" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="lesson-text">
+                    <h2>HTML Nedir?</h2>
+                    <p>HTML (Hypertext Markup Language), web sayfalarının yapısını oluşturmak için kullanılan standart işaretleme dilidir.</p>
+                    
+                    <h2>İlk HTML Sayfası</h2>
+                    <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;İlk Sayfam&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Merhaba Dünya!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                    </code></pre>
+
+                    <div class="practice-exercises">
+                        <h3>Alıştırmalar</h3>
+                        <ol>
+                            <li>Kendi ilk HTML sayfanızı oluşturun</li>
+                            <li>Sayfaya başlık ve paragraf ekleyin</li>
+                            <li>Sayfanızı tarayıcıda görüntüleyin</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+
+            <section id="html-structure" class="lesson">
+                <h1>HTML Sayfa Yapısı</h1>
+                <div class="video-container">
+                    <iframe 
+                        width="100%" 
+                        height="515" 
+                        src="https://www.youtube.com/embed/TsU8kVVeti0?start=6" 
+                        title="HTML Sayfa Yapısı" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="lesson-text">
+                    <h2>HTML Sayfa Yapısı Nasıl Olmalı?</h2>
+                    <p>Bir HTML sayfası belirli bir yapıya sahip olmalıdır. Bu yapı, tarayıcılara ve arama motorlarına sayfanızın nasıl yorumlanması gerektiğini anlatır.</p>
+                    
+                    <h2>Temel HTML Yapısı</h2>
+                    <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="tr"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Sayfa Başlığı&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Ana Başlık&lt;/h1&gt;
+    &lt;/header&gt;
+    &lt;main&gt;
+        &lt;article&gt;
+            &lt;h2&gt;Makale Başlığı&lt;/h2&gt;
+            &lt;p&gt;İçerik...&lt;/p&gt;
+        &lt;/article&gt;
+    &lt;/main&gt;
+    &lt;footer&gt;
+        &lt;p&gt;Alt Bilgi&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                    </code></pre>
+
+                    <div class="practice-exercises">
+                        <h3>Alıştırmalar</h3>
+                        <ol>
+                            <li>Semantik HTML etiketlerini kullanarak bir sayfa yapısı oluşturun</li>
+                            <li>Sayfanıza header, main ve footer bölümleri ekleyin</li>
+                            <li>Her bölüme uygun içerikler yerleştirin</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+
+            <section id="html-elements" class="lesson">
+                <h1>HTML Temel Etiketler</h1>
+                <div class="video-container">
+                    <iframe 
+                        width="100%" 
+                        height="515" 
+                        src="https://www.youtube.com/embed/IzPY9OuA5m0" 
+                        title="HTML Temel Etiketler" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="lesson-text">
+                    <h2>Sık Kullanılan HTML Etiketleri</h2>
+                    <p>HTML'de en çok kullanılan etiketleri ve bunların işlevlerini öğrenelim.</p>
+                    
+                    <h2>Temel Etiketler ve Kullanımları</h2>
+                    <pre><code>
+&lt;!-- Başlık Etiketleri --&gt;
+&lt;h1&gt;En Büyük Başlık&lt;/h1&gt;
+&lt;h2&gt;Alt Başlık&lt;/h2&gt;
+&lt;h3&gt;Daha Küçük Başlık&lt;/h3&gt;
+
+&lt;!-- Metin Etiketleri --&gt;
+&lt;p&gt;Paragraf metni&lt;/p&gt;
+&lt;strong&gt;Kalın metin&lt;/strong&gt;
+&lt;em&gt;İtalik metin&lt;/em&gt;
+
+&lt;!-- Listeler --&gt;
+&lt;ul&gt;
+    &lt;li&gt;Sırasız liste öğesi&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;Sıralı liste öğesi&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;!-- Bağlantılar ve Görseller --&gt;
+&lt;a href="https://www.ornek.com"&gt;Bağlantı&lt;/a&gt;
+&lt;img src="resim.jpg" alt="Resim açıklaması"&gt;
+                    </code></pre>
+
+                    <div class="practice-exercises">
+                        <h3>Alıştırmalar</h3>
+                        <ol>
+                            <li>Farklı başlık seviyelerini kullanarak bir içerik oluşturun</li>
+                            <li>Sıralı ve sırasız listeler içeren bir menü yapın</li>
+                            <li>Resim ve bağlantılar içeren bir galeri oluşturun</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+
+            <section id="html-forms" class="lesson">
+                <h1>HTML Form Elemanları</h1>
+                <div class="video-container">
+                    <iframe 
+                        width="100%" 
+                        height="515" 
+                        src="https://www.youtube.com/embed/TU-L8yxi5Ig" 
+                        title="HTML Form Elemanları" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="lesson-text">
+                    <h2>HTML Form Elemanları Nelerdir?</h2>
+                    <p>Web sayfalarında kullanıcıdan veri almak için kullanılan form elemanlarını ve özelliklerini öğrenelim.</p>
+                    
+                    <h2>Temel Form Yapısı</h2>
+                    <pre><code>
+&lt;form action="/gonder" method="POST"&gt;
+    &lt;!-- Metin Girişi --&gt;
+    &lt;label for="isim"&gt;İsim:&lt;/label&gt;
+    &lt;input type="text" id="isim" name="isim" required&gt;
+
+    &lt;!-- E-posta Girişi --&gt;
+    &lt;label for="eposta"&gt;E-posta:&lt;/label&gt;
+    &lt;input type="email" id="eposta" name="eposta" required&gt;
+
+    &lt;!-- Şifre Girişi --&gt;
+    &lt;label for="sifre"&gt;Şifre:&lt;/label&gt;
+    &lt;input type="password" id="sifre" name="sifre" required&gt;
+
+    &lt;!-- Seçim Kutusu --&gt;
+    &lt;label for="sehir"&gt;Şehir:&lt;/label&gt;
+    &lt;select id="sehir" name="sehir"&gt;
+        &lt;option value="istanbul"&gt;İstanbul&lt;/option&gt;
+        &lt;option value="ankara"&gt;Ankara&lt;/option&gt;
+        &lt;option value="izmir"&gt;İzmir&lt;/option&gt;
+    &lt;/select&gt;
+
+    &lt;!-- Onay Kutusu --&gt;
+    &lt;label&gt;
+        &lt;input type="checkbox" name="kosul" required&gt;
+        Kullanım koşullarını kabul ediyorum
+    &lt;/label&gt;
+
+    &lt;!-- Gönder Butonu --&gt;
+    &lt;button type="submit"&gt;Gönder&lt;/button&gt;
+&lt;/form&gt;
+                    </code></pre>
+
+                    <div class="practice-exercises">
+                        <h3>Alıştırmalar</h3>
+                        <ol>
+                            <li>Basit bir kayıt formu oluşturun</li>
+                            <li>Farklı input tiplerini kullanın (text, email, password, checkbox, radio)</li>
+                            <li>Form validasyonu ekleyin</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="lesson-navigation">
+        <button class="prev-lesson" disabled>Önceki Ders</button>
+        <button class="next-lesson">Sonraki Ders</button>
+    </div>
+
+    <script src="lesson-navigation.js"></script>
+</body>
+</html> 
